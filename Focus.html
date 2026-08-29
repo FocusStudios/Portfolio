@@ -41,38 +41,20 @@ pointer-events:none;}
 font-family:'Digital7';
 src:url('JS/digital-7.ttf') format('truetype');}
 
-.title {
-position:absolute;
-bottom:-30px;
-text-align:left;
-left:10px;
-font-family:"Montserrat Alternates", serif;
-font-style: normal;
-font-weight:600;
-font-size:0.85rem;
-color:transparent;
-background:linear-gradient(#00FFFF,#00FF9F);
--webkit-background-clip:text;
-text-shadow:0 1px 5px rgba(51,255,255,0.5);}
-
-.Container:nth-child(2) .title {
-bottom:-40px;}
-
 .show .Container li {
 position:relative;
 display:flex;
 justify-content:center;
 align-items:center;
-width:330px;
-height:330px;
-border-radius:20px;
+dflex-direction:column;
+gap:30px;
 cursor:pointer;
 pointer-events:auto;
 font-family:"Roboto", sans-serif;
 font-optical-sizing:auto;}
 
 .show .Container a, .show .Container iframe {
-position:absolute;
+position:relative;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -83,6 +65,17 @@ border:none;
 overflow:hidden;
 color:inherit; 
 text-decoration:none !important;}
+
+.title {
+position:relative;
+left:10px;
+font-weight:600;
+font-size:0.85rem;
+font-family:"Montserrat Alternates", serif;
+color:transparent;
+background:linear-gradient(#00FFFF,#00FF9F);
+-webkit-background-clip:text;
+text-shadow:0 1px 5px rgba(51,255,255,0.5);}
 
 @media screen and (max-width: 700px) {
 
@@ -522,18 +515,103 @@ transform:scale(0.8);}
 <ul class="Container"></ul>
 <ul class="Container active">
 
-<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Basic1.html" loading="lazy"></iframe></li>
-<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Basic2.html" loading="lazy"></iframe></li>
-<li><iframe src="https://focusstudios.github.io/Carousel-Demo/InfiniteSliderH.html" loading="lazy"></iframe></li>
-<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Slides2.html" loading="lazy"></iframe></li>
-<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Slides3.html" loading="lazy"></iframe></li>
-<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Slides4.html" loading="lazy"></iframe></li>
-<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Circular.html" loading="lazy"></iframe></li>
-<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Rotating.html" loading="lazy"></iframe></li>
-<li><iframe src="https://focusstudios.github.io/Carousel-Demo/ImageSlider1.html" loading="lazy"></iframe></li>
-<li><iframe src="https://focusstudios.github.io/Carousel-Demo/HorizontalSlider.html" loading="lazy"></iframe></li>
-<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Offers.html" loading="lazy"></iframe></li>
-<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Photos.html" loading="lazy"></iframe></li>
+<li>
+
+ <a href="https://focusstudios.github.io/Carousel/Basic1.html">
+  <iframe src="https://focusstudios.github.io/Carousel-Demo/Basic1.html" loading="lazy"></iframe>
+ </a>
+
+ <span>Basic - Style 1</span>
+
+</li>
+
+ <a href="https://focusstudios.github.io/Carousel/Basic2.html">
+  <iframe src="https://focusstudios.github.io/Carousel-Demo/Basic2.html" loading="lazy"></iframe>
+ </a>
+
+ <span>Basic - Style 2</span>
+
+</li>
+
+ <a href="https://focusstudios.github.io/Carousel/InfiniteSliderH.html">
+  <iframe src="https://focusstudios.github.io/Carousel-Demo/InfiniteSliderH.html" loading="lazy"></iframe>
+ </a>
+
+ <span>Infinite Carousel</span>
+
+</li>
+
+ <a href="https://focusstudios.github.io/Carousel/Slides2.html">
+  <iframe src="https://focusstudios.github.io/Carousel-Demo/Slides2.html" loading="lazy"></iframe>
+ </a>
+
+ <span>Slides1 - Style 1</span>
+
+</li>
+
+ <a href="https://focusstudios.github.io/Carousel/Slides3.html">
+  <iframe src="https://focusstudios.github.io/Carousel-Demo/Slides3.html" loading="lazy"></iframe>
+ </a>
+
+ <span>Slides - Style 2</span>
+
+</li>
+
+ <a href="https://focusstudios.github.io/Carousel/Slides4.html">
+  <iframe src="https://focusstudios.github.io/Carousel-Demo/Slides4.html" loading="lazy"></iframe>
+ </a>
+
+ <span>Slides - Style 3</span>
+
+</li>
+
+ <a href="https://focusstudios.github.io/Carousel/Circular.html">
+  <iframe src="https://focusstudios.github.io/Carousel-Demo/Basic1.html" loading="lazy"></iframe>
+ </a>
+
+ <span>Circular Carousel</span>
+
+</li>
+
+ <a href="https://focusstudios.github.io/Carousel/Rotating.html">
+  <iframe src="https://focusstudios.github.io/Carousel-Demo/Rotating.html" loading="lazy"></iframe>
+ </a>
+
+ <span>Rotating Carousel</span>
+
+</li>
+
+ <a href="https://focusstudios.github.io/Carousel/ImageSlider1.html">
+  <iframe src="https://focusstudios.github.io/Carousel-Demo/ImageSlider1.html" loading="lazy"></iframe>
+ </a>
+
+ <span>ImageSlider - Style 1</span>
+
+</li>
+
+ <a href="https://focusstudios.github.io/Carousel/HorizontalSlider.html">
+  <iframe src="https://focusstudios.github.io/Carousel-Demo/HorizontalSlider.html" loading="lazy"></iframe>
+ </a>
+
+ <span>ImageSlider - Style 2</span>
+
+</li>
+
+ <a href="https://focusstudios.github.io/Carousel/Offers.html">
+  <iframe src="https://focusstudios.github.io/Carousel-Demo/Offers.html" loading="lazy"></iframe>
+ </a>
+
+ <span>3D Slider</span>
+
+</li>
+
+ <a href="https://focusstudios.github.io/Carousel/Photos.html">
+  <iframe src="https://focusstudios.github.io/Carousel-Demo/Photos.html" loading="lazy"></iframe>
+ </a>
+
+ <span>Sipwer - Cards</span>
+
+</li>
 
 </ul>
 
