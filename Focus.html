@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Focus</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="SVG/Focus.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Logo.css">
+
+<style>
+
+html {
+-webkit-tap-highlight-color:transparent;
+scroll-behavior:smooth;}
+
+body {
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+background:#051B34;}
+
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+user-select:none;}
+
+img {
+pointer-events:none;}
+
+@font-face {
+font-family:'Digital7';
+src:url('JS/digital-7.ttf') format('truetype');}
+
+.title {
+position:absolute;
+bottom:-30px;
+text-align:left;
+left:10px;
+font-family:"Montserrat Alternates", serif;
+font-style: normal;
+font-weight:600;
+font-size:0.85rem;
+color:transparent;
+background:linear-gradient(#00FFFF,#00FF9F);
+-webkit-background-clip:text;
+text-shadow:0 1px 5px rgba(51,255,255,0.5);}
+
+.Container:nth-child(2) .title {
+bottom:-40px;}
+
+.show .Container li {
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+width:330px;
+height:330px;
+border-radius:20px;
+cursor:pointer;
+pointer-events:auto;
+font-family:"Roboto", sans-serif;
+font-optical-sizing:auto;}
+
+.show .Container a, .show .Container iframe {
+position:absolute;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:20px;
+width:100%;
+height:100%;
+overflow:hidden;
+color:inherit; 
+text-decoration:none !important;}
+
+@media screen and (max-width: 700px) {
+
+.show .Container {
+grid-template-columns:repeat(1,330px);
+gap:80px;}
+
+.show .Design {
+transform:scale(1);}
+
+}
+
+@media screen and (min-width: 700px) {
+
+.show .Container {
+grid-template-columns:repeat(2,330px);
+gap:40px;}
+
+.show .Design {
+transform:scale(0.8);}
+
+}
+
+@media screen and (min-width: 1050px) {
+
+.show .Container {
+grid-template-columns:repeat(3,330px);
+gap:40px;}
+
+.show .Design {
+transform:scale(0.8);}
+
+}
+
+</style>
+
+<body>
+
+<!--  logo -->
+   
+<div id="container" class="logo-container">
+
+<div class="section-container">
+
+<!-- Header -->
+<header>
+
+<img class="Logo1" src="Icons/Focus.svg">
+<div class="text-container">
+<h3 class="slogan">Focus on Design.</h3>
+<h3 class="slogan">We Handle the Code.</h3>
+</div>
+<svg class="left" viewBox="0 0 100 100">
+
+<defs>
+
+<linearGradient id="Grad-Stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#00ffff"/>
+<stop offset="100%" stop-color="#00ff9f"/>
+</linearGradient>
+
+<filter id="Stroke-Shadow" x="-30%" y="-30%" width="160%" height="160%">
+<feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#00ffff" flood-opacity="1"/>
+</filter>
+</defs>
+
+<rect class="rect" x="12.5" y="12.5" width="75" height="75" rx="10" ry="10" stroke="#00ffff" filter="url(#Stroke-Shadow)"/>
+<rect class="rect main" x="12.5" y="12.5" width="75" height="75" rx="10" ry="10" stroke="url(#Grad-Stroke)" filter="url(#Stroke-Shadow)"/>
+
+</svg>
+
+<svg class="right" viewBox="0 0 100 100">
+
+<defs>
+<linearGradient id="Grad-Stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#00ff9f"/>
+<stop offset="100%" stop-color="#00ffff"/>
+</linearGradient>
+
+<filter id="Stroke-Shadow" x="-30%" y="-30%" width="160%" height="160%">
+<feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#00ffff" flood-opacity="1"/>
+</filter>
+</defs>
+
+<rect class="rect" x="12.5" y="12.5" width="75" height="75" rx="10" ry="10" stroke="#00ffff" filter="url(#Stroke-Shadow)"/>
+<rect class="rect main" x="12.5" y="12.5" width="75" height="75" rx="10" ry="10" stroke="url(#Grad-Stroke)" filter="url(#Stroke-Shadow)"/>
+
+</svg>
+
+</header>
+
+<!-- Section 1 -->
+<section class="section1" id="Section1">
+<h3>What is Focus ?</h3>
+<p>Focus is an online service that transforms UI/UX designs into clean, responsive, and production-ready HTML, CSS, and JavaScript code.</p>
+<p>It bridges the gap between design and development by accurately converting visual designs into functional front-end implementations.</p>
+</section>
+
+<!-- Section 2 -->
+<section class="section2" id="Section2">
+<h3>What We Offer</h3>
+<ul>
+<li style="--i:0;"><div class="box"><img class="icon" src="Icons/Code.svg"><h4>Code</h4><span>Convert UI/UX designs into HTML, CSS and JS Code</span></div></li>
+<li style="--i:1;"><div class="box"><img class="icon" src="Icons/Create.svg"><h4>Create</h4><span>Create UI elements such as carousels and nav bars</span></div></li>
+<li style="--i:2;"><div class="box"><img class="icon" src="Icons/Responsive.svg"><h4>Responsive</h4><span>Fully responsive layouts for all devices</span></div></li>
+<li style="--i:3;"><div class="box"><img class="icon" src="Icons/Enhance.svg"><h4>Enhance</h4><span>Deliver smooth and accessible user experience</span></div></li>
+<li style="--i:4;"><div class="box"><img class="icon" src="Icons/Animation.svg"><h4>Animation</h4><span>Eye-catching animations that bring designs to life</span></div></li>
+<li style="--i:5;"><div class="box"><img class="icon" src="Icons/Maintainace.svg"><h4>Maintainace</h4><span>Code maintainance and performance optimization</span></div></li>
+</ul>
+</section>
+
+<!-- Section 3 -->
+<section class="section3">
+<div class="path-container">
+
+<svg class="circular-path" viewBox="0 0 200 200">
+
+<defs>
+<!-- Stroke gradient -->
+<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#00ff9f"/>
+<stop offset="100%" stop-color="#00ffff"/>
+</linearGradient>
+
+<filter id="glow" x="-30" y="-30" width="280" height="280" filterUnits="userSpaceOnUse">
+<feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#00ffff" flood-opacity="0.8"/>
+</filter>
+</defs>
+
+<!-- Background -->
+<circle class="background-path" cx="100" cy="100" r="70"/>
+
+<!-- Progress -->
+<circle class="progress" cx="100" cy="100" r="70"/>
+
+</svg>
+
+<span class="percentage" x="100" y="100" id="percent">0%</span>
+<span class="language" x="100" y="100">HTML</span>
+
+</div>
+
+<div class="path-container">
+
+<svg class="circular-path" viewBox="0 0 200 200">
+
+<defs>
+<!-- Stroke gradient -->
+<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#00ff9f"/>
+<stop offset="100%" stop-color="#00ffff"/>
+</linearGradient>
+
+<filter id="glow" x="-30" y="-30" width="280" height="280" filterUnits="userSpaceOnUse">
+<feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#00ffff" flood-opacity="0.8"/>
+</filter>
+</defs>
+
+<!-- Background -->
+<circle class="background-path" cx="100" cy="100" r="70"/>
+
+<!-- Progress -->
+<circle class="progress" cx="100" cy="100" r="70"/>
+
+</svg>
+
+<span class="percentage" x="100" y="100" id="percent">0%</span>
+<span class="language" x="100" y="100">CSS</span>
+
+</div>
+
+<div class="path-container">
+
+<svg class="circular-path" viewBox="0 0 200 200">
+
+<defs>
+<!-- Stroke gradient -->
+<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#00ff9f"/>
+<stop offset="100%" stop-color="#00ffff"/>
+</linearGradient>
+
+<filter id="glow" x="-30" y="-30" width="280" height="280" filterUnits="userSpaceOnUse">
+<feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#00ffff" flood-opacity="0.8"/>
+</filter>
+</defs>
+
+<!-- Background -->
+<circle class="background-path" cx="100" cy="100" r="70"/>
+
+<!-- Progress -->
+<circle class="progress" cx="100" cy="100" r="70"/>
+
+</svg>
+
+<span class="percentage" x="100" y="100" id="percent">0%</span>
+<span class="language" x="100" y="100">JavaScript</span>
+
+</div>
+</section>
+
+<!-- Section 4 -->
+<section class="section4">
+<h3>Features</h3>
+<ul>
+
+<li style="--i:0;"><img class="icon" src="Icons/Diamond.svg"><span>Unique Design</span></li>
+<li style="--i:1;"><img class="icon" src="Icons/Idea.svg"><span>Creative Ideas</span></li>
+<li style="--i:2;"><img class="icon" src="Icons/Customize.svg"><span>Fully Customizable</span></li>
+<li style="--i:3;"><img class="icon" src="Icons/Scalable.svg"><span>Scalable Code</span></li>
+<li style="--i:4;"><img class="icon" src="Icons/OnTime.svg"><span>On Time Delivery</span></li>
+<li style="--i:5;"><img class="icon" src="Icons/ShakeHands.svg"><span>Ongoing Support</span></li>
+
+</ul>
+</section>
+
+<!-- Section 5 -->
+<section class="section5">
+<h3>What People Say</h3>
+
+<div class="carousel-wrapper">
+
+<div class="carousel-container">
+
+<ul>
+
+<li>
+<img class="profile" src="Icons/Profile1.jpg">
+<h4>Emily Johnson</h4>
+<div class="stars">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+</div>
+<p>“Focus did an excellent job converting our UI/UX designs into clean, responsive HTML, CSS, and JavaScript. The final result matched the design perfectly and worked smoothly across all devices.”</p>
+</li>
+
+<li>
+<img class="profile" src="Icons/Profile2.jpg">
+<h4>Ryan Parker</h4>
+<div class="stars">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+</div>
+<p>“We handed Focus our Figma designs and got pixel-perfect front-end code in return. The structure was clean, well-organized, and easy for our developers to integrate.”</p>
+</li>
+
+<li>
+<img class="profile" src="Icons/Profile3.jpg">
+<h4>Sarah Collins</h4>
+<div class="stars">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+</div>
+<p>“Focus understands both design and development, which makes a huge difference. They translated our UI/UX concepts into functional, high-quality code without losing any details.”</p>
+</li>
+
+<li>
+<img class="profile" src="Icons/Profile4.jpg">
+<h4>Michael Turner</h4>
+<div class="stars">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+</div>
+<p>“Working with Focus saved us a lot of time. The HTML, CSS, and JS output was optimized, responsive, and followed best practices. Everything worked exactly as expected right out of the box.”</p>
+</li>
+
+<li>
+<img class="profile" src="Icons/Profile5.jpg">
+<h4>Jessica Brown</h4>
+<div class="stars">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+<img class="star" src="Icons/star.svg">
+</div>
+<p>“Focus delivered accurate and scalable front-end code from our UI designs. Animations, layouts, and interactions were implemented perfectly. A great choice for design-to-code services.”</p>
+</li>
+
+</ul>
+
+</div>
+
+<div class="arrows">
+<img class="left" src="Icons/arrow-left.svg">
+<img class="right" src="Icons/arrow-right.svg">
+</div>
+
+</div>
+
+</section>
+
+<!-- Section 6 -->
+<section class="section6">
+
+<div id="logo" class="logo">
+
+<div id="light"></div>
+
+<h1 id="F">F</h1>
+<h1 id="cus">cus</h1>
+
+<div id="focus">
+
+<svg id="backside" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.87038 2.92843C4.70826 1.05339 7.20095 0 9.8001 0V0.00339792H15V20H9.79996V19.9966C7.20086 19.9966 4.70822 18.9432 2.87038 17.0682C1.03251 15.1931 0 12.65 0 9.9983C0 7.34659 1.03251 4.80348 2.87038 2.92843Z" fill="#00FFFF"/>
+<rect id="hide" x="15" width="0" height="20" fill="#051B34" style="transition:0.4s;"/>
+</svg>    
+
+
+<div id="glass"></div>
+
+<div id="glow"></div>
+
+<svg id="shine" class="shine" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.4538 13.3344C15.1039 13.9067 14.6661 14.4204 14.1565 14.8565" stroke="#00FFFF" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M8.02436 3.91521C8.98377 3.60348 10.0033 3.52324 10.9997 3.68104C11.9961 3.83885 12.9409 4.23023 13.7571 4.82318C14.5732 5.41612 15.2374 6.1938 15.6954 7.09264C16.1533 7.99147 16.3921 8.98593 16.3921 9.99471" stroke="#00FFFF" stroke-width="1.4" stroke-linecap="round"/>
+</svg>
+
+</div>
+
+</div>
+
+<button id="Button">
+<div class="background"></div>
+<span>See More</span>
+</button>
+
+</section>
+
+<!-- Footer -->
+<footer>
+<div class="line"></div>
+
+<div class="lists">
+
+<ul>
+<li class="titleP"><a>Our Designs</a></li>
+<li><a class="n" href="HomePage.html">Home Pages</a></li>
+<li><a class="n" href="SideNavbar.html">Side Navbars</a></li>
+<li><a class="n" href="BottomNavbar.html">Bottom Navbars</a></li>
+<li><a class="n" href="Carousel.html">Carousels</a></li>
+</ul>
+
+<ul>
+<li class="titleP"><a>About Us</a></li>
+<li><a class="n" href="#Section1">What is Focus</a></li>
+<li><a class="n" href="#Section2">Our Services</a></li>
+<li><a class="n" href="Terms.html">Terms & Conditions</a></li>
+</ul>
+
+<ul style="width:230px;">
+
+<li class="titleP"><a>Contact Us</a></li>
+
+<li>
+<a href="mailto:focusstudios2025@gmail.com" class="contact">
+<img class="off" src="Icons/Email.svg"> 
+<img class="on" src="Icons/Email2.svg">               
+<span style="left:30px;">focusstudios2025@gmail.com</span>
+</a>
+</li>
+
+<li>
+<a href="https://wa.me/qr/KPGVNGQRUY7NH1" class="contact">
+<img class="off" src="Icons/WhatsApp.svg"> 
+<img class="on" src="Icons/WhatsApp2.svg">               
+<span style="left:30px;">+20 1004918691</span>
+</a>
+</li>
+
+<li>
+<a href="tel:+201010364460" class="contact">
+<img class="off" src="Icons/Phone.svg"> 
+<img class="on" src="Icons/Phone2.svg">               
+<span style="left:30px;">+20 1010364460</span>
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<div class="social-media">
+<span>Follow Us</span>
+<div class="items">
+<a href="https://www.behance.net/yassmeanahmed"><img src="Icons/Behance.svg"></a>
+<a href="https://dribbble.com/focusstudios2025"><img src="Icons/Dribble.svg"></a>
+<a href="https://www.pinterest.com/focusstudios2025/"><img src="Icons/Pinterest.svg"></a>
+<a href="B.html"><img src="Icons/LinkedIn.svg"></a>
+</div>
+<p>© 2026 Focus. All Rights Reserved.</p>
+</div>
+
+</footer>
+
+</div>
+
+</div>
+
+    
+<div id="show" class="show">
+
+<div class="layer">
+
+<svg id="Back" class="back" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 22L12 17L17 12M12.6944 17H22.8333" stroke="#051B34" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<nav id="Nav">
+<div class="background"></div>
+
+<section>
+<span>Home Page</span>
+<span>Side Navbar</span>
+<span>Bottom Navbar</span>
+<span class="active">Carousel</span>
+
+</section>
+
+</nav>
+
+<ul class="Container"></ul>
+<ul class="Container"></ul>
+<ul class="Container"></ul>
+<ul class="Container active">
+
+<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Basic1.html" loading="lazy"></iframe></li>
+<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Basic2.html" loading="lazy"></iframe></li>
+<li><iframe src="https://focusstudios.github.io/Carousel-Demo/InfiniteSliderH.html" loading="lazy"></iframe></li>
+<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Slides2.html" loading="lazy"></iframe></li>
+<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Slides3.html" loading="lazy"></iframe></li>
+<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Slides4.html" loading="lazy"></iframe></li>
+<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Circular.html" loading="lazy"></iframe></li>
+<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Rotating.html" loading="lazy"></iframe></li>
+<li><iframe src="https://focusstudios.github.io/Carousel-Demo/ImageSlider1.html" loading="lazy"></iframe></li>
+<li><iframe src="https://focusstudios.github.io/Carousel-Demo/HorizontalSlider.html" loading="lazy"></iframe></li>
+<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Offers.html" loading="lazy"></iframe></li>
+<li><iframe src="https://focusstudios.github.io/Carousel-Demo/Photos.html" loading="lazy"></iframe></li>
+
+</ul>
+
+</div>
+
+</div>
+
+<audio id="audio1" class="audio_1">
+<source src="Sound/SoundA.m4a">
+</audio>
+
+<audio id="audio2" class="audio_1">
+<source src="Sound/SoundB.m4a">
+</audio>
+
+<script src="JS/Logo.js"></script>
+
+</body>
+
+</html>
