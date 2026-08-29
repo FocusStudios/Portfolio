@@ -55,16 +55,19 @@ font-optical-sizing:auto;}
 
 .show .Container a, .show .Container iframe {
 position:relative;
-display:flex;
-justify-content:center;
-align-items:center;
-border-radius:20px;
 width:330px;
 height:330px;
+border-radius:20px;
+display:flex;
+justify-content:center;
+align-items:center;}
+
+.show .Container iframe {
 border:none;
 overflow:hidden;
-color:inherit; 
-text-decoration:none !important;}
+pointer-events:none;
+outline:1px solid rgba(255,255,255,0.5);
+box-shadow:-1px 4px 10px rgba(255,255,255,0.3);}
 
 .show .Container span {
 position:relative;
