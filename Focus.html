@@ -56,6 +56,7 @@ font-optical-sizing:auto;}
 .show .Container a, .show .Container iframe {
 position:relative;
 width:330px;
+height:330px;
 border-radius:20px;
 display:flex;
 justify-content:center;
@@ -63,14 +64,11 @@ align-items:center;
 overflow:hidden;
 outline:2px solid rgba(255,255,255,0.2);
 box-shadow:-1px 4px 10px rgba(255,255,255,0.05);}
-
-.show .Container:nth-child(4) a, .show .Container:nth-child(4) iframe {
-height:330px;}
     
-.show .Container:nth-child(2) a, .show .Container:nth-child(2) iframe {
+.show .SideNavbar a, .show .SideNavbar iframe {
 height:600px;}
 
-.show .Container:nth-child(3) a, .show .Container:nth-child(3) iframe {
+.show .BottomNavbar a, .show .BottomNavbar iframe {
 height:250px;}
 
 .show .Container iframe {
@@ -522,12 +520,13 @@ transform:scale(0.8);}
 
 </nav>
 
-<ul class="Container"></ul>
-<ul class="Container"></ul>
+<ul class="Container LandingPage"></ul>
+
+<ul class="Container SideNavbar"></ul>
 
 <!-- Bottom Navbar -->
 
-<ul class="Container">
+<ul class="Container BottomNavbar">
 
 <li>
 
@@ -613,7 +612,7 @@ transform:scale(0.8);}
 
 <!-- Carousels -->
 
-<ul class="Container active">
+<ul class="Container Carousel active">
 
 <li>
 
