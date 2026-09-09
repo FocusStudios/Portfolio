@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Focus | Landing Pages</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Icons/Icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+
+html {
+-webkit-tap-highlight-color:transparent;
+scroll-behavior:smooth;}
+
+body {
+width:100vw;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;}
+
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+user-select:none;
+font-style:normal;
+font-family:"Montserrat Alternates", serif;}
+
+.project-container {
+position:absolute;
+width:100vw;
+height:100vh;
+overflow-x:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#051B34;}
+
+.project-container::-webkit-scrollbar {
+width:15px;}
+
+.project-container::-webkit-scrollbar-thumb {
+border-radius:7.5px;
+background:linear-gradient(#00FFFF,#00FF9F);}
+
+.project-container.touch::-webkit-scrollbar {
+display:none;}
+
+.project-container.mouse::-webkit-scrollbar {
+display:flex;}
+
+h1 {
+position:absolute;
+top:100px;
+font-weight:1000;
+font-size:2rem;
+color:transparent;
+background:linear-gradient(to right,#00FFFF,#00FF9F);
+-webkit-background-clip:text;
+background-clip:text;
+text-align:center;
+letter-spacing:1px;
+text-shadow:0 1px 5px rgba(51,255,255,0.5);}
+
+.Container {
+position:absolute;
+top:0;
+width:100%;
+padding:230px 0 80px 0;
+display:grid;
+justify-content:center;
+overflow:hidden;}
+ 
+.Container li {
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+gap:30px;
+font-family:"Roboto", sans-serif;
+font-optical-sizing:auto;}
+
+.Container a, .Container iframe {
+position:relative;
+width:330px;
+height:330px;
+border-radius:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+cursor:pointer;
+outline:2px solid rgba(255,255,255,0.2);
+box-shadow:-1px 4px 10px rgba(255,255,255,0.05);}
+
+.Container iframe {
+border:none;
+pointer-events:none;}
+
+.Container span {
+position:relative;
+font-weight:600;
+font-size:0.85rem;
+margin-left:10px;
+margin-right:auto;
+font-family:"Montserrat Alternates", serif;
+color:transparent;
+background:linear-gradient(#00FFFF,#00FF9F);
+-webkit-background-clip:text;
+background-clip:text;
+text-shadow:0 1px 5px rgba(51,255,255,0.5);}
+
+@media screen and (max-width: 700px) {
+
+.Container {
+grid-template-columns:repeat(1,330px);
+gap:80px;}
+
+.Container li {
+transform:scale(1);}
+
+}
+
+@media screen and (min-width: 750px) {
+
+.Container {
+grid-template-columns:repeat(2,330px);
+gap:40px;}
+
+.Container li {
+transform:scale(0.8);}
+
+}
+
+@media screen and (min-width: 1100px) {
+
+.Container {
+grid-template-columns:repeat(3,330px);
+gap:40px;}
+
+.Container li {
+transform:scale(0.8);}
+
+}
+
+</style>
+
+<body>
+
+<div class="project-container mouse">
+
+<h1>Landing Pages</h1>
+
+<ul class="Container"></ul>
+
+</div>
+
+<script>
+
+const ProjectContainer = document.querySelector('.project-container');
+const Container = document.querySelector('.Container');
+
+
+// Touch or mouse setup
+if ("ontouchstart" in document.documentElement) {
+
+ProjectContainer.classList.replace("mouse","touch");
+
+} else {
+
+ProjectContainer.classList.replace("touch","mouse");
+
+}
+
+// Projects
+const LandingPage = [
+
+  { link: "https://focusstudios.github.io/LandingPage/Skincare.html", demo: "https://focusstudios.github.io/LandingPage-Demo/Skincare.html", title: "Skincare Landing Page" },
+  { link: "https://focusstudios.github.io/LandingPage/Burger.html", demo: "https://focusstudios.github.io/LandingPage-Demo/Burger.html", title: "Fast Food Landing Page" },
+
+]
+
+LandingPage.forEach(LandingPage => {
+
+    Container.innerHTML += `
+
+    <li>
+   
+     <a href="${LandingPage.link}" target="_blank">
+      <iframe src="${LandingPage.demo}" loading="lazy"></iframe>
+     </a>
+
+     <span>${LandingPage.title}</span>
+   
+    </li>
+
+    `;
+});
+
+
+</script>
+
+</body>
+
+</html>
